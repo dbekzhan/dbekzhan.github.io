@@ -1,0 +1,45 @@
+@font-face {
+  font-family: 'icomoon';
+  src:  url('fonts/icomoon.eot?6py85u');
+  src:  url('fonts/icomoon.eot?6py85u#iefix') format('embedded-opentype'),
+    url('fonts/icomoon.ttf?6py85u') format('truetype'),
+    url('fonts/icomoon.woff?6py85u') format('woff'),
+    url('fonts/icomoon.svg?6py85u#icomoon') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+[class^="icon-"], [class*=" icon-"] {
+  /* use !important to prevent issues with browser extensions that change fonts */
+  font-family: 'icomoon' !important;
+  speak: none;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+
+.icon-facebook2:before {
+  content: "\eac0";
+}
+.icon-github:before {
+  content: "\eae0";
+}
+.icon-linkedin2:before {
+  content: "\eaf9";
+}
+.icon-instagram:before {
+  content: "\eac2";
+}
+.icon-facebook2, .icon-github, .icon-linkedin2, .icon-instagram {
+    color: dimgray;
+}
+.icon-facebook2:hover, .icon-github:hover, .icon-linkedin2:hover, .icon-instagram:hover {
+    color: #2c98f0;
+}

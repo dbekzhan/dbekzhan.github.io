@@ -1,4 +1,4 @@
-;(function () {
+$(function() {
 	
 	'use strict';
 
@@ -167,8 +167,8 @@
 
 
 	};
-
-	// Reflect scrolling in navigation
+    
+    // Reflect scrolling in navigation
 	var navActive = function(section) {
 
 		var $el = $('#navbar > ul');
@@ -178,6 +178,29 @@
 		});
 
 	};
+    
+    var projectSection = document.getElementsByClassName("projectSection");
+    
+	var projectNavActive = function() {
+		var $el = $('#projectbar > p');
+		$el.find('span').removeClass('active');
+		$(this).closest('span').addClass('active');
+        // Show Filtered Projects
+        var filterAttr = $(this).attr('section-filter');
+        if (filterAttr == "all") {
+            $(".filter").show(400);
+        } else {
+            $(".filter").not("."+filterAttr).hide(400);
+            $(".filter").filter("."+filterAttr).show(400);
+        }
+        
+        
+	};
+    
+    for (var i = 0; i < projectSection.length; i++) {
+    projectSection[i].addEventListener('click', projectNavActive, false);
+    }
+    
 
 	var navigationSection = function() {
 
@@ -201,11 +224,6 @@
 		});
 
 	};
-
-
-
-
-
 
 	var sliderMain = function() {
 		

@@ -43,3 +43,17 @@
 .icon-facebook2:hover, .icon-github:hover, .icon-linkedin2:hover, .icon-instagram:hover {
     color: #2c98f0;
 }
+.icon-pen2:before {
+  content: "\e90f";
+}
+.icon-share3:before {
+  content: "\e0b5";
+}
+.icon-reload:before {
+  content: "\e0b4";
+}
+
+
+.icon-bubble3:before {
+  content: "\e914";
+}
